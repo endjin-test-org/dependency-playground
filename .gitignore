@@ -352,3 +352,10 @@ MigrationBackup/
 # for the benefit of speeding-up 'act'
 .github/actions/
 .git/
+
+# build outputs
+_packages/
+_codeCoverage/
+.zf/extensions
+*.sbom.*
+*coverage*.xml

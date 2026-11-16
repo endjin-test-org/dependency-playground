@@ -221,7 +221,7 @@ jobs:
     steps:
     - uses: actions/setup-dotnet@c2fa09f4bde5ebb9d1777cf28262a3eb3db3ced7   # v5.2.0
       with:
-        dotnet-version: '6.x'
+        dotnet-version: '10.x'
 
     - uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 #v4.1.1
       with:
@@ -243,7 +243,7 @@ jobs:
       # runs on the .NET 6 runtime set up above, which global.json does not affect.
       working-directory: ${{ runner.temp }}
       run: |
-        dotnet tool install -g GitVersion.Tool --version 5.8.0
+        dotnet tool install -g GitVersion.Tool --version 6.8.2
         echo "/github/home/.dotnet/tools" >> $GITHUB_PATH
     - name: Run GitVersion
       id: run_gitversion

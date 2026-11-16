@@ -352,3 +352,5 @@ MigrationBackup/
 # for the benefit of speeding-up 'act'
 .github/actions/
 .git/
+# ZeroFailed extensions, installed by each build
+/.zf/**/extensions/
